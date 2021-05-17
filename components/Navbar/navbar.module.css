@@ -1,0 +1,76 @@
+.header {
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 0;
+    background: #172755;
+  }
+}
+.header nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.header nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0 auto 0 82px;
+  gap: 36px;
+}
+@media (max-width: 1050px) {
+  .header nav ul {
+    margin-left: 30px;
+  }
+}
+.header nav ul li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+@media (max-width: 768px) {
+  .header nav ul li {
+    display: none;
+  }
+}
+.header nav ul li:last-child {
+  margin-right: 0;
+}
+.header nav .btn_in {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  color: #8794BA;
+  margin-right: 40px;
+}
+@media (max-width: 1050px) {
+  .header nav .btn_in {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .header nav button:last-child {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=navbar.module.css.map */

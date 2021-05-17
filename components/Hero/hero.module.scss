@@ -1,0 +1,113 @@
+.section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 815px;
+  padding-top: 164px;
+  position: relative;
+  @media (max-width: 768px) {
+    padding-top: 120px;
+  }
+
+  .absolute {
+    position: absolute;
+    top: 0;
+    height: 815px;
+    width: 100%;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .HeroGrid {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media (max-width: 425px) {
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+      position: unset;
+      z-index: 10;
+    }
+
+    .right {
+      @media (max-width: 425px) {
+        order: 2;
+        width: 100%;
+      }
+
+      h1 {
+        width: 100%;
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 120%;
+        color: #FFFFFF;
+        @media (max-width: 768px) {
+          font-size: 4.5vw;
+        }
+
+        br {
+          @media (max-width: 1050px) {
+            display: none;
+          }
+        }
+      }
+
+      .btn {
+        background: #EF2A82;
+        border-radius: 68px;
+        border: none;
+        outline: none;
+        padding: 15px 80px;
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #FFFFFF;
+      }
+    }
+
+    .left {
+      @media (max-width: 425px) {
+        order: 1;
+      }
+
+      .mainImage {
+        width: 100%;
+        box-shadow: 0 18px 50px -15px rgba(25, 42, 89, 0.2);
+        height: 100%;
+        @media (max-width: 425px) {
+          display: none;
+        }
+      }
+
+      .imgCard {
+        display: none;
+        height: 100%;
+        width: 100%;
+        padding: 13px;
+        background: #FFFFFF;
+        box-shadow: 0 7.5px 20.8333px -6.25px rgba(25, 42, 89, 0.2);
+        border-radius: 12.5px;
+        @media (max-width: 425px) {
+          display: block;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+
+    }
+  }
+
+}

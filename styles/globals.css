@@ -1,0 +1,92 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.text {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+
+    color: #8794BA;
+}
+
+.center {
+    text-align: center;
+}
+
+.btn {
+    background: transparent;
+    border: 1px solid #465B95;
+    box-sizing: border-box;
+    border-radius: 68px;
+    padding: 10px 53px;
+    outline: none;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8794BA
+}
+
+.text-m {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8794BA;
+}
+
+@media (max-width: 1050px) {
+    .container {
+        max-width: 850px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 700px;
+    }
+}
+@media (max-width: 425px) {
+    .container {
+        max-width: 335px;
+    }
+    .center{
+        text-align: left ;
+    }
+}
+@media (max-width: 358px) {
+    .container {
+        max-width: 310px;
+    }
+
+}
